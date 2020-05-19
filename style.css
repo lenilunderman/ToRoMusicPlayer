@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@300;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background: linear-gradient(180deg, #2A0D3F 0%, #C31432 100%);
+    background-blend-mode: darken;
+    height: 100vh;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    margin-top:  100px;
+    width: 700px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 108px;
+    align-items: flex-end;
+    color: #E5E5E5;
+}
+
+.sub-heading{
+    margin-top: 45px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #928181;  
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.sub-heading p{
+    width: 750px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #928181;
+    padding: 25px 0px;
+}
+
+.controls{
+    display: flex;
+    margin: 25px 0px;
+}
+button{
+    background: #410E3D;
+    border-radius: 15px;
+    width: 217px;
+    height: 62px;
+    border: 0;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span.playsong{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E5E5E5;
+    margin:10px 0;
+    padding-left: 20px;
+}
+
+span.stopsong{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E5E5E5;
+    margin:10px 0;
+    padding-left: 20px;
+}
+
+span.nextsong{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E5E5E5;
+    margin:10px 0;
+    padding-right: 20px;
+}
+
+span.previoussong{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #E5E5E5;
+    margin:10px 0;
+    padding-left: 20px;
+}
+
+.music-progress{
+    display: flex;
+    width: 100%;
+    border: 0;
+}
+
+.timeStamp{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.dashboard-music{
+   width: 100%; 
+}
+
+.music-on{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 50px 0;
+    color: #2A0D3F;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.title , .artist{
+    margin: 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+/* media query for tables and small screens */
+@media(max-width:1180px){
+    .controls{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button{
+        width: 90%;
+        margin-left: 0px;
+        padding: 0px auto;   
+    }
+
+    .music-progress input{
+        border: 0 auto;
+        color: red;
+        background-color: transparent;
+        width: 80%;
+    }
+}
+
+/* media query for tables and large smartphones */
+@media(max-width:810px){
+    header{
+        width: 570px;
+        margin-left: 20px;
+    }
+}
+
+
+/* media query for smartphones */
+@media(max-width:680px){
+    body{
+        height: auto;
+    }
+    header{
+        display: flex;
+        width: 440px;
+        font-size: 48px;
+        justify-content: center;
+        font-weight: bold;   
+    }
+
+    .controls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        margin-left: 5px;  
+    }
+    
+    button{
+        margin: 5px;
+        width:100%; 
+    }
+
+    li{
+        margin: 10px 0px;
+        padding: 10px 0px;
+    }
+}

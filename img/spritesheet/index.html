@@ -1,0 +1,72 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Ikonate</title>
+    <style>
+      :root {
+        --grey--light: #fafaff;
+        --white: #ffffff;
+      }
+
+      body {
+        background: var(--grey--light);
+      }
+
+      .main {
+        width: 1152px;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .main__item {
+        background: var(--white);
+        border-radius: 4px;
+        padding: 20px;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .main__item svg {
+          width: 24px;
+          height: 24px;
+          stroke: #e5e5e5;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          fill: none;
+          color: #e5e5e5;
+  }</style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="main__item"><svg>
+          <title id="playIconTitle">Play</title>
+          <use xlink:href="./ikonate.svg#play"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="pauseCircleIconTitle">Pause</title>
+          <use xlink:href="./ikonate.svg#pause-circle"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="stopIconTitle">Stop</title>
+          <use xlink:href="./ikonate.svg#stop"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="chevronsLeftIconTitle">Chevron Left</title>
+          <use xlink:href="./ikonate.svg#chevrons-left"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="chevronsRightIconTitle">Chevrons Right</title>
+          <use xlink:href="./ikonate.svg#chevrons-right"></use>
+        </svg></div>
+      <div class="main__item"><svg>
+          <title id="musicIconTitle">Music</title>
+          <use xlink:href="./ikonate.svg#music"></use>
+        </svg></div>
+    </div>
+
+  </body>
+
+</html>
