@@ -193,7 +193,7 @@ li{
     }
     header{
         display: flex;
-        width: 440px;
+        width: fit-content;
         font-size: 48px;
         justify-content: center;
         font-weight: bold;   
